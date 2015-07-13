@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.3in]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \begin{document}
@@ -21,6 +21,15 @@ De este modo tendríamos:
 Y_i&=\beta_i+\beta_2 x_{2i}+...+\beta_p x_{pi}+U_i\\
 E(U_i)&=0 \ \ \ \ \ \ i=1,...,n\\
 \end{align}
-tomando la esperanza obtendríamos:
+Por lo que tomando la esperanza de $Y_i$ obtendríamos:
 $$E(Y_i)=\beta_i+\beta_2 x_{2i}+...+\beta_p x_{pi}$$
+  Sin embargo suele pasar que algunos de estos supuestos no se cumplen por la naturaleza de la información. Por lo que se utiliza los modelos lineales generalizados.
+  Estos modelos son una extensión de los modelos lineales que permiten utilizar distribuciones no normales de los errores (binomiales, Poisson, gamma, etc) y varianzas no constantes. \\
+  Generalmente utilizamos modelos GLM cuando la variable dependiente es:
+  \begin{itemize}
+  \item Una variable de conteo de casos, como por ejemplo: número de colisiones,viviendas,accidentes,..,etc.
+  \item Una variable de conteo de casos expresados como proporciones, por ejemplo: porcentaje de heridos en un accidente,porcentaje de personas con empleo,...,etc.
+  \item Una variable binaria, por ejemplo: vivo o muerto, hombre o mujer,mayor de edad o no,...,etc.
+  \end{itemize}
+  
   \end{document}
