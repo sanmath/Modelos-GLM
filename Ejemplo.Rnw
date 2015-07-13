@@ -1,0 +1,26 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\begin{document}
+\title{Ejercicio modelo de frecuencia}
+\author{Boris Polanco}
+\maketitle
+\newpage
+\section{Introducción}
+Los modelos de regresión lineal, se basan en los siguientes supuestos:
+\begin{itemize}
+\item Los errores se distribuyen normalmente.
+\item La varianza es constante.
+\item La variable dependiente se relaciona linealmente con las variables independientes
+\end{itemize}
+De este modo tendríamos:
+\begin{align}
+Y_i&=\beta_i+\beta_2 x_{2i}+...+\beta_p x_{pi}+U_i\\
+E(U_i)&=0 \ \ \ \ \ \ i=1,...,n\\
+\end{align}
+tomando la esperanza obtendríamos:
+$$E(Y_i)=\beta_i+\beta_2 x_{2i}+...+\beta_p x_{pi}$$
+  \end{document}

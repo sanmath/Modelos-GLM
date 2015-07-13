@@ -1,14 +1,10 @@
-\documentclass[a4paper,12pt,titlepage]{scrartcl}
+\documentclass[a4paper,12pt]{scrartcl}
 \usepackage[latin1]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage[letterpaper, landscape, margin=0.2in]{geometry}
 \usepackage{pdflscape}
 \usepackage{graphicx}
 \begin{document}
-\titlehead{
-  \centering
-  \includegraphics[width=0.45\textwidth]{Actuaria_completo.jpg}
-}
 \title{Ejercicio modelo de frecuencia}
 \author{Boris Polanco}
 \publishers{Actuaria Consultores Cia.Ltda} 
