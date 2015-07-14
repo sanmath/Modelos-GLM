@@ -49,5 +49,21 @@ hist(x,col="red",main = "Número de accidentes")
   @
 \section{Función link, vínculo o ligadura}
 Una de las razones por las que el modelo lineal puede no ser adecuado para describir un fenómeno determinado es que la relación entre la variable dependiente y las variables independientes no es siempre lineal. Un ejemplo lo tenemos en la relación entre la edad de una persona y su estado de salud. Generalmente la salud de la gente de $30$ años no es muy distinta a la de $40$. Sin embargo, las diferencias son más marcadas entre la gente de $60$ y $70$ años.
+Para ello se utiliza la función link la cual se encarga de linealizar la relación entre la variable dependiente y la(s) variables independiente(s) mediante una transformación de la variable respuesta. \\
+
+\newline
+\section{Aplicación de modelos GLM a tarificación de primas de seguros de no vida}
+Para entender el problema de tarificación  de seguros de no vida es necesario que definamos lo siguiente.
+Una póliza de un seguro de no vida, es un acuerdo entre una compañía aseguradora y un cliente (asegurado), en este acuerdo el asegurador debe compensar al cliente por una cierta cantidad en caso de que ocurra un siniestro durante cierto período de tiempo, durante el cual el asegurado debe pagar una cuota (prima). Un seguro de no vida puede cubrir daños sobre un automóvil, una casa u otra propiedad, o daños corporales del asegurado u otra persona(responsabilidad de terceros). Para una compañia, el seguro puede cubrir daños materiales, el costo por la interrupción de un negocio o problemas de salud de los empleados. \\
+Por el contrato de seguro, el riesgo económico se transfiere de la póliza
+a la aseguradora. Debido a la ley de los grandes números, la pérdida de la aseguradora, siendo la suma de un gran número de pequeñas pérdidas relativamente independientes, es mucho
+más predecible que el de un individuo (en términos relativos): la pérdida no debe
+estar muy lejos de su valor esperado. 
+Esto nos lleva al principio de aplicación general
+que la prima debe basarse en la acción esperada (promedio) pérdida que se transfiere
+del titular de la póliza a la aseguradora. También debe haber una carga para la administración
+costos, costo de capital, etc., pero ese no es el tema aquí.
+
+
 
 \end{document}
