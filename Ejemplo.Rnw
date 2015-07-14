@@ -38,11 +38,16 @@ $$E(Y_i)=\beta_i+\beta_2 x_{2i}+...+\beta_p x_{pi}$$
   \item Poisson: muy útiles para conteo de acontecimientos, por ejemplo: número de heridos por accidentes de tráfico, número de hogares asegurados que dan parte de siniestro al día,..,etc.
   \item Binomial: de gran utilidad para proporciones y datos de presencia o ausencia, por ejemplo: tasas de mortalidad, tasas de infección, porcentaje de siniestros mortales.
   \item Gamma muy útiles con datos que muestran un coeficiente de variación constante, esto se da cuando la varianza aumenta conforme aumenta la media de la muestra, por ejemplo: número de heridos en función del número de siniestros.
-  \item
   \end{itemize}
-  Además en los modelos lineales habituales, se asume que la variable dependiente así como también los errores del modelo siguen una distribución normal. Por ejemplo, supongamos que un investigador està interesado en predecir cuantos accidentes se producen al día en un lugar determinado, en este caso es razonable asumir que la variable dependiente seguirá una distribución de tipo Poisson y no una normal como algunas veces se utiliza por comodidad.
+  Además en los modelos lineales habituales, se asume que la variable dependiente así como también los errores del modelo siguen una distribución normal. Por ejemplo, supongamos que un investigador està interesado en predecir cuantos accidentes se producen al día en un lugar determinado, en este caso es razonable asumir que la variable dependiente seguirá una distribución de tipo Poisson y no una normal como algunas veces se utiliza por comodidad.\\
+Por ejemplo, supongamos que un accidente de vehículo se produce en una ciudad en un promedio de 2 por semana, entonces este fenómeno lo podemos modelar utilizando la distribución de Poisson
+con parámetro $\lambda=2$ .
+  
 <<tidy=TRUE,size="small",echo=FALSE>>=
-  x<-c(2,3,4)
-plot(x,x)
+  x<-rpois(1000,2)
+hist(x,col="red",main = "Número de accidentes")
   @
-  \end{document}
+\section{Función link, vínculo o ligadura}
+Una de las razones por las que el modelo lineal puede no ser adecuado para describir un fenómeno determinado es que la relación entre la variable dependiente y las variables independientes no es siempre lineal. Un ejemplo lo tenemos en la relación entre la edad de una persona y su estado de salud. Generalmente la salud de la gente de $30$ años no es muy distinta a la de $40$. Sin embargo, las diferencias son más marcadas entre la gente de $60$ y $70$ años.
+
+\end{document}
